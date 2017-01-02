@@ -18,7 +18,7 @@ npm install logtown-winston winston
 
 ```javascript
 const logtown = require('logtown');
-const Winston = require('logtown-winston');
+const WinstonWrapper = require('logtown-winston');
 const winston = require('winston');
 
 const customTransportsArray = [
@@ -35,10 +35,16 @@ const customTransportsArray = [
 
 const customWinstonOptions = {exitOnError: false};
 
-logtown.addWrapper(new Winston(customTransportsArray, customWinstonOptions));
+logtown.addWrapper(new WinstonWrapper(customTransportsArray, customWinstonOptions));
 ```
 
 For reference of winston options see [winston docs](https://github.com/winstonjs/winston)
+
+## ES5 usage
+
+```javascript
+var WinstonWrapper = require('logtown-winston/es5');
+```
 
 ## License
 
