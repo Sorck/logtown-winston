@@ -1,5 +1,7 @@
 # logtown-winston
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/logtown/logtown-winston.svg)](https://greenkeeper.io/)
+
 > Logtown wrapper for winston logger 
 
 ## Installation
