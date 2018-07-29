@@ -24,7 +24,7 @@ class Winston {
    * @param {{}} winstonOptions
    */
   constructor(transports = DEFAULT_TRANSPORTS, winstonOptions = {exitOnError: true}) {
-    this._logger = new winston.Logger(Object.assign(
+    this._logger = winston.createLogger(Object.assign(
       {exitOnError: true},
       winstonOptions,
       {transports: transports}
